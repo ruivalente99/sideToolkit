@@ -1,5 +1,3 @@
-import LogRocket from 'logrocket';
-LogRocket.init('utcbcq/sidetoolbox');
 let table = document.getElementsByClassName("table");
 let aNode = table[0];
 let rawGrades = [];

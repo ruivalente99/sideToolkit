@@ -3,20 +3,13 @@
     "description": "A bunch of tools to make SIDE a better place 👌",
     "version": "1.0",
     "permissions" : ["activeTab","scripting"],
-    "manifest_version": 3,
+    "manifest_version": 2,
     "content_scripts": [
         {
             "matches": ["*://www.campus.utad.pt/registoacademico/PlanoEstudos/*"],
             "js": ["average_grades.js"],
             "run_at": "document_end"
-        },
-        {
-            "matches": ["*://side.utad.pt/cursos/*"],
-            "css": ["side.css"],
-            "js": ["side_style.js"],
-            "run_at": "document_end"
         }
-
     ],
     "icons": {
         "16": "icon.png",
