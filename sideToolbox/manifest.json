@@ -7,7 +7,7 @@
     "content_scripts": [
         {
             "matches": ["*://www.campus.utad.pt/registoacademico/PlanoEstudos/*"],
-            "js": ["average_grades.js"],
+            "js": ["ScriptTargets/RegistoAcademico/PlanoEstudos/average_grades.js"],
             "run_at": "document_end"
         }
     ],
