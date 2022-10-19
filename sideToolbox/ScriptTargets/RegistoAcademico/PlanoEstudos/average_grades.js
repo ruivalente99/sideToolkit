@@ -123,3 +123,12 @@ for (let i = 1, row; (row = rows[i]); i++) {
     row.style = "background-color: #ccffcc;";
   }
 }
+
+
+
+browser.browserAction.onClicked.addListener((tab) => {
+  // disable the active tab
+  browser.browserAction.disable(tab.id);
+  // requires the "tabs" or "activeTab" permission, or host permissions for the URL
+  console.log(tab.url);
+});
